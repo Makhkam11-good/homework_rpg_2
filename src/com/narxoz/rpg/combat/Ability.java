@@ -30,11 +30,14 @@ package com.narxoz.rpg.combat;
  */
 public interface Ability {
 
-    // TODO: Define ability behavior methods
-    // Consider:
-    // - String getName()
-    // - int getDamage()
-    // - String getDescription()
-    // - Ability clone()  <-- IMPORTANT for deep copying!
+    String getName();
+
+    int getDamage();
+
+    String getDescription();
+
+    String getType();
+
+    Ability clone();
 
 }

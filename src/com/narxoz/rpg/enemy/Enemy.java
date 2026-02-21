@@ -60,30 +60,26 @@ import java.util.List;
  */
 public interface Enemy {
 
-    // TODO: Define core stat methods
-    // - String getName()
-    // - int getHealth()
-    // - int getDamage()
-    // - int getDefense()
-    // - int getSpeed()
+    String getName();
 
-    // TODO: Define ability methods
-    // - List<Ability> getAbilities()
+    int getHealth();
 
-    // TODO: Define loot methods
-    // - LootTable getLootTable()
+    int getDamage();
 
-    // TODO: Define display method
-    // - void displayInfo()   (shows all stats, abilities, loot)
+    int getDefense();
 
-    // TODO: Define clone method for Prototype pattern
-    // - Enemy clone()
-    //
-    // CRITICAL: This must perform DEEP COPY!
-    // If you do shallow copy, cloned enemies will share ability
-    // and loot references with the original — causing bugs!
-    //
-    // Test your clone: modify the clone's abilities.
-    // Does the original change? If yes → your copy is too shallow!
+    int getSpeed();
+
+    String getElement();
+
+    List<Ability> getAbilities();
+
+    LootTable getLootTable();
+
+    String getAIBehavior();
+
+    void displayInfo();
+
+    Enemy clone();
 
 }
